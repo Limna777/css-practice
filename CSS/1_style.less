@@ -1,0 +1,143 @@
+html{
+    font-size: 100vw/750*40;
+    background-color: #eff0f4;
+}
+.w{
+    width: 693/40rem;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.top-bar:extend(.w){
+    display: flex;
+    height: 175/40rem;
+    justify-content: space-between;
+    line-height: 175/40rem;
+    h1{
+        font-size: 50/40rem;
+        font-family: "微软雅黑";
+    }
+    i{
+        color: #77787B;
+    }
+}
+.banner:extend(.w){
+    img{
+        width: 100%;
+        vertical-align: top;
+    }
+}
+.pic:extend(.w){
+    height: 310/40rem;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    
+    a{
+        display: block;
+        height: 104/40rem;
+        width: 327/40rem;
+        font-family: "微软雅黑";
+        font-size: 36/40rem;
+        color: white;
+        line-height: 104/40rem;
+        border-radius: 10/40rem;
+        
+        i{
+            margin: 0 20/40rem 0 20/40rem;
+        }
+
+    }
+    .pic1{
+        
+        a{
+            background-color: #F87255;
+        }
+    }
+    .pic2{
+        a{
+            background-color: #CB67FD;
+        }
+    }
+    .pic3{
+        a{
+            background-color: #FE3873;
+        }
+    }
+    .pic4{
+        a{
+            background-color: #1C92FE;
+        }
+    }
+}
+.title:extend(.w){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    a{
+        color: #85868A ;
+        font-size: 43/40rem;
+    }
+    h2{
+        padding-left: 22/40rem;
+        border-left: 6/40rem solid #3a84ff;
+        font-family: "微软雅黑";
+        font-size: 45/40rem;       
+    }   
+}
+.item-list:extend(.w){
+    display: flex;
+    overflow: auto;
+    margin-top: 40/40rem;
+    margin-bottom: 40/40rem;
+    width: 720/40rem;
+
+    .item{
+        flex: none;
+        margin-right: 29/40rem;
+        box-sizing: border-box;
+        padding: 18/40rem 15/40rem 0 15/40rem;
+        width: 320/40rem;
+        height: 324/40rem;
+        background-color: #fff;
+        box-shadow:0 0 10px rgba(0,0, 0, 0.3);
+        border-radius:10px;
+        justify-content: space-around;
+      
+        
+    }
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    img{
+        width:100%
+    }
+    h3{
+        font-size: 29/40rem;
+        font-family: "微软雅黑";
+        color: #3D4047;
+    }
+}
+
+.avater{
+        width:53/40rem;
+}
+.user-info{
+    display:flex;
+    
+    .nickname{
+        margin-top:14/40rem; 
+        margin-left: 14/40rem;
+        vertical-align: bottom;
+        font-size: 30/40rem;
+        font-family: "微软雅黑";
+        color: #C8C8C7;
+    }
+}
+
+

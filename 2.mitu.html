@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=dv, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 0 auto;
+            background-image: url(./img/trump_run.png);
+            animation: run 1.2S steps(6) infinite alternate;
+            animation-timing-function: ;
+        }
+        
+
+        @keyframes run {
+            from{
+                background-position: 0 0;
+            }
+            25%{
+                background-position: -600px 0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

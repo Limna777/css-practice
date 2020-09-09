@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clock {
+            width: 400px;
+            height: 400px;
+            background-image: url(./img/clock.png);
+            background-size: 400px 400px;
+            margin: 100px auto;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .clock>div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0px;
+            margin: auto;
+        }
+
+        .box1 {
+            width: 280px;
+            height: 280px;
+            border-radius: ;
+            animation: sec 1s steps(60) infinite;
+            position: absolute;
+            z-index: 4;
+        }
+
+        .sec {
+            height: 140px;
+            width: 3px;
+            background-color: red;
+            margin-left: 140px;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            animation: sec 60s steps(60) infinite;
+            z-index: 3;
+            
+        }
+
+        .min {
+            height: 150px;
+            width: 5px;
+            margin-left: 150px;
+            background-color: rgb(35, 12, 97);
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            animation: sec 3600s steps(60) infinite;
+
+
+        }
+
+        .hour {
+            height: 100px;
+            width: 6px;
+            margin-left: 100px;
+            background-color: rgb(52, 138, 150);
+        }
+
+
+        @keyframes sec {
+            from {
+                transform: rotateZ(0);
+            }
+
+            to {
+                transform: rotateZ(1turn);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock">
+        <div class="box1">
+            <div class="sec"></div>
+        </div>
+        <div class="box2">
+            <div class="min"></div>
+        </div>
+        <div class="box3">
+            <div class="hour"></div>
+        </div>
+    </div>
+</body>
+
+</html>

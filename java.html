@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+                    padding: 0;
+                    margin: 0;
+                    font-family: sans-serif;
+                    background-color: #2E4761;
+                    color:white;
+                }
+                h1{
+                color:pink;
+                }
+                tr{
+                border:"2px solid pink";
+                }
+    </style>
+</head>
+<body>
+    <center>
+		<h1 style="font-size: 30; font-family:微软雅黑;">后台管理页面</h1>
+	</center>
+	<table align="center" width="500px" border= "1px">
+		<tr>
+		<td colspan= "4"><input type="button"  "button" onclick=" addUser()" value= "版加账号信息"   />
+    尊敬的<%=loginUser.getRole().getRoleName() %> : <%=loginUser.getUsername() %> <a href="">注销</a>
+    	</td>
+    	<td colspan= "4">
+    	角色操作:   	 <a href= "">添加角色</a>
+					 <a href= "/gllg_ auction/roleManage?me thod=findAllRoLes">显示所有角色</a>
+		</td>
+	</tr>
+	<tr>
+			<td colspan= "4">
+资源操作:
+			<a href= "/gLLg_ auction/addResourceUI. jsp">添加资源</a>
+			<a href= "/gllg_ auction/ResouceManage ?method=L istResource ">显示资源列表</a>
+			</td>
+	</tr>
+
+		</td>
+		<tr>
+			<td>账号名</td>
+			<td>密码</td>
+			<td>年龄</td>
+			<td>操作</td>
+		</tr>
+		<!--  Type mismatch: cannot convert from element type Object to User -->
+		 <%   List  users=  (ArrayList<User>)request.getAttribute("users");  %>
+		 
+		<%
+			int temp = 0;
+			for (User   user : (ArrayList<User>)users) {
+				temp++;
+		%>
+		<tr>
+			<td><%=user.getUsername()  %></td>
+			<td><%=user.getPassword()  %></td>
+			<td><%=user.getAge()  %></td>
+			<td><a href="/gllg_auction/delUserInfo?userId=<%=user.getId() %>">回收账号</a>
+			 
+			
+			 <a href="/gllg_auction/updateUserInfo?userId=<%=user.getId() %>">修改账号密码</a></td>
+		</tr>
+		<% } %>
+		</tbody>>
+	</table>
+</body>
+</html>

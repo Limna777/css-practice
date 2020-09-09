@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html{
+            perspective: 800px;
+        }
+        
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .cube{
+            transform-style: preserve-3d;
+            animation: run 5s infinite alternate-reverse;
+            width: 300px;
+            height: 300px;
+            margin: 200px auto;
+        }
+        .cube > div{
+          
+            position:absolute;
+            width: 300px;
+            height: 300px;
+            opacity: 0.95;
+        }
+        img{
+            vertical-align: top;
+        }
+        .luo1{
+            transform: rotateY(90deg) translateZ(150px);
+        }
+        .luo2{
+            transform: rotateY(-90deg)  translateZ(150px);
+        }
+        .luo3{
+            transform: rotateX(90deg) translateZ(150px);
+        }
+        .luo4{
+            transform: rotateX(-90deg) translateZ(150px);
+        }
+        .luo5{
+            transform: rotateX(180deg) translateZ(150px);
+        }
+        .luo6{
+            transform: translateZ(150px);
+        }
+        @keyframes run{
+            from{
+                transform: rotateX(0) rotateZ(0);
+            }
+            to{
+                transform: rotateX(360deg) rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cube">
+    <div class="luo1">
+        <img src="./img/luo/1.JPG" alt="">
+    </div>
+    <div class="luo2">
+        <img src="./img/luo/2.JPG" alt="">
+    </div>
+    <div class="luo3">
+        <img src="./img/luo/3.JPG" alt="">
+    </div>
+    <div class="luo4">
+        <img src="./img/luo/4.JPG" alt="">
+    </div>
+    <div class="luo5">
+        <img src="./img/luo/5.JPG" alt="">
+    </div>
+    <div class="luo6">
+        <img src="./img/luo/6.JPG" alt="">
+    </div>
+    </div>
+</body>
+</html>

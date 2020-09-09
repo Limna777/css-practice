@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        html{
+            background-color: black;
+        }
+        .wrap{
+            width: 600px;
+            height: 200px;
+            
+            overflow: hidden;
+        }
+        .box{
+            height: 200px;
+            width:1200px;
+            margin-left: -600px;
+            background-color: gray;
+            font-size: 100px;
+            line-height: 200px;
+            text-align: left;
+            color: rgba(255,255,255,.3);
+            font-weight: bold;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(to right, black 600px, white 630px,black 660px);
+            background-position: 0 0;
+            transition: all 1s ease-in;
+            
+            
+        }
+        .box span{
+            margin-left: 600px;
+        }
+        .box:hover{
+            background-position: 600px 0;
+        }
+        
+        
+        /* .fa{
+            margin: 0 auto;
+            margin-top: 100px;
+            width: 60px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .son{
+            width: 60px;
+            height: 600px;
+            background-image: repeating-linear-gradient(15deg,yellow 0px,yellow 12px,pink 12px,pink 24px);
+            background-position: 0 0;
+            animation: run 5s infinite;
+            animation-timing-function: linear;
+        }*/
+        /* @keyframes run{
+            from{
+                background-image: linear-gradient(to right, black 0px, white 30px,black 60px);
+            }
+            to{
+                background-image:linear-gradient(to right, black 540px, white 570px,black 600px)
+            }
+        }  */
+    </style>
+</head>
+<body>
+    <div class="wrap">
+     <div class="box">
+         <span>黄泽怀是只猪</span>
+       
+     </div>
+    </div>
+   <div class="fa">
+       <div class="son">
+
+       </div>
+   </div>
+</body>
+</html>

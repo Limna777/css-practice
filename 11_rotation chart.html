@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #34495e;
+        }
+        .slidershow{
+            width: 1149px;
+            height: 431.25px;
+            overflow: hidden;
+        }
+        .middle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .navigation{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        .bar{
+            width: 80px;
+            height: 15px;
+            border: 2px  solid #808080;
+            margin: 3px 12px;
+            cursor: pointer;
+            background-color: transparent;
+            transition: 0.4s;
+        }
+        input[name="r"]{
+            position: absolute;
+            visibility: hidden;
+        }
+        .bar:hover{
+            background-color: #34495e;
+        }
+        .slides{
+            width: 400%;
+            height: 100%;
+            display: flex;
+        }
+        .slide{
+            width: 25%;
+            transition: 0.8s;
+        }
+        .slide img{
+            height: 100%;
+        }
+        #r1:checked ~ .s1{
+            margin-left: 0;
+        }
+        #r2:checked ~ .s1{
+            margin-left: -25%;
+        }
+        #r3:checked ~ .s1{
+            margin-left: -50%;
+        }
+        #r4:checked ~ .s1{
+            margin-left: -75%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="slidershow middle">
+        <div class="slides">
+            <!-- 自定义input中的check属性 -->
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+            <div class="slide s1">
+                <img src="./img/Rotation chart/1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/Rotation chart/2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/Rotation chart/3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/Rotation chart/4.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="navigation">
+            <!-- x选中标签则会对应相应的input  -->
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+        </div>
+    </div>
+    
+</body>
+</html>

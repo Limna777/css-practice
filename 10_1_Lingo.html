@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+                background-color: #2E4761;
+            }
+            .box{
+                width: 300px;
+                background-color: rgb(27, 23, 23);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                padding: 40px;
+            }
+            h1{
+                color: white;
+                font-weight: 500;
+
+            }
+            .box input[type = "text"],.box input[type = "password"]{
+                display: block;
+                margin: 15px auto;
+                background-color: transparent;
+                border: 2px solid rgb(50, 135, 192);
+                padding: 15px 20px;
+                color: white;
+                border-radius: 30px;
+                text-align: center;
+                outline: none;
+                transition: 0.25s;
+            }
+            .box input[type = "text"]:focus{
+                width: 220px;
+                border-color: gold;
+            }
+            .box input[type = "password"]:focus{
+                width: 220px;
+                border-color: #6ccc2c;
+            }
+            .box input[type = "submit"]{
+                display: block;
+                margin: 15px auto;
+                background-color: transparent;
+                border: 2px solid rgb(70, 173, 241);
+                padding: 12px 30px;
+                color: white;
+                border-radius: 30px;
+                text-align: center;
+                outline: none;
+                transition: 0.25s;
+                cursor: pointer;
+            }
+            .box input[type = "submit"]:hover{
+                color: #1B1717;
+                font-weight: bold;
+                background-color: rgb(226, 197, 144);
+            }
+          
+            
+        </style>
+    </head>
+
+    <body>
+            
+            <form class="box" action="" method="">
+                <h1>LOGIN</h1>
+                <input type="text" placeholder="username">
+                <input type="password" placeholder="passwords">               
+                <input type="submit" value="Login">
+        
+          </form>
+    </body>
+
+</html>
